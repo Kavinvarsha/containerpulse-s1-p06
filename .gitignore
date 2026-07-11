@@ -2,6 +2,13 @@ venv/
 .env
 *.pyc
 __pycache__/
-*.db
-*.csv
-*.json
+containerpulse.db
+metrics_raw.csv
+metrics_ml_ready.csv
+anomaly_*.csv
+anomaly_report.json
+lstm_forecast.json
+incident_report.json
+incident_report.txt
+lstm_forecast.json
+.pytest_cache/
