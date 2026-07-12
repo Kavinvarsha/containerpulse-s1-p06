@@ -1,0 +1,245 @@
+{
+  "generated_at": "2026-07-12T06:16:04.474920",
+  "week6_isolation_forest": {
+    "api-service": {
+      "total_samples": 55,
+      "anomalies_detected": 3,
+      "anomaly_rate_pct": 5.45,
+      "cpu_spike_detection": "1/3",
+      "memory_leak_detection": "1/3",
+      "crash_loop_detection": "3/3",
+      "false_positive_rate_pct": 94.55
+    },
+    "cadvisor": {
+      "total_samples": 55,
+      "anomalies_detected": 3,
+      "anomaly_rate_pct": 5.45,
+      "cpu_spike_detection": "1/3",
+      "memory_leak_detection": "3/3",
+      "crash_loop_detection": "1/3",
+      "false_positive_rate_pct": 94.55
+    },
+    "cadvisor-csknm": {
+      "total_samples": 55,
+      "anomalies_detected": 3,
+      "anomaly_rate_pct": 5.45,
+      "cpu_spike_detection": "1/3",
+      "memory_leak_detection": "1/3",
+      "crash_loop_detection": "3/3",
+      "false_positive_rate_pct": 94.55
+    },
+    "coredns": {
+      "total_samples": 55,
+      "anomalies_detected": 3,
+      "anomaly_rate_pct": 5.45,
+      "cpu_spike_detection": "1/3",
+      "memory_leak_detection": "3/3",
+      "crash_loop_detection": "1/3",
+      "false_positive_rate_pct": 94.55
+    },
+    "etcd": {
+      "total_samples": 55,
+      "anomalies_detected": 3,
+      "anomaly_rate_pct": 5.45,
+      "cpu_spike_detection": "1/3",
+      "memory_leak_detection": "1/3",
+      "crash_loop_detection": "3/3",
+      "false_positive_rate_pct": 94.55
+    },
+    "grafana": {
+      "total_samples": 55,
+      "anomalies_detected": 3,
+      "anomaly_rate_pct": 5.45,
+      "cpu_spike_detection": "1/3",
+      "memory_leak_detection": "3/3",
+      "crash_loop_detection": "3/3",
+      "false_positive_rate_pct": 94.55
+    },
+    "kube-apiserver": {
+      "total_samples": 55,
+      "anomalies_detected": 3,
+      "anomaly_rate_pct": 5.45,
+      "cpu_spike_detection": "1/3",
+      "memory_leak_detection": "1/3",
+      "crash_loop_detection": "3/3",
+      "false_positive_rate_pct": 94.55
+    },
+    "kube-controller-manager": {
+      "total_samples": 55,
+      "anomalies_detected": 3,
+      "anomaly_rate_pct": 5.45,
+      "cpu_spike_detection": "1/3",
+      "memory_leak_detection": "1/3",
+      "crash_loop_detection": "3/3",
+      "false_positive_rate_pct": 94.55
+    },
+    "kube-proxy": {
+      "total_samples": 55,
+      "anomalies_detected": 3,
+      "anomaly_rate_pct": 5.45,
+      "cpu_spike_detection": "1/3",
+      "memory_leak_detection": "3/3",
+      "crash_loop_detection": "3/3",
+      "false_positive_rate_pct": 94.55
+    },
+    "kube-scheduler": {
+      "total_samples": 55,
+      "anomalies_detected": 3,
+      "anomaly_rate_pct": 5.45,
+      "cpu_spike_detection": "1/3",
+      "memory_leak_detection": "3/3",
+      "crash_loop_detection": "3/3",
+      "false_positive_rate_pct": 94.55
+    },
+    "kube-state-metrics": {
+      "total_samples": 55,
+      "anomalies_detected": 3,
+      "anomaly_rate_pct": 5.45,
+      "cpu_spike_detection": "1/3",
+      "memory_leak_detection": "3/3",
+      "crash_loop_detection": "1/3",
+      "false_positive_rate_pct": 94.55
+    },
+    "node-exporter": {
+      "total_samples": 55,
+      "anomalies_detected": 3,
+      "anomaly_rate_pct": 5.45,
+      "cpu_spike_detection": "1/3",
+      "memory_leak_detection": "3/3",
+      "crash_loop_detection": "3/3",
+      "false_positive_rate_pct": 94.55
+    },
+    "pipeline-worker": {
+      "total_samples": 55,
+      "anomalies_detected": 3,
+      "anomaly_rate_pct": 5.45,
+      "cpu_spike_detection": "3/3",
+      "memory_leak_detection": "1/3",
+      "crash_loop_detection": "3/3",
+      "false_positive_rate_pct": 94.55
+    },
+    "prometheus-server": {
+      "total_samples": 55,
+      "anomalies_detected": 3,
+      "anomaly_rate_pct": 5.45,
+      "cpu_spike_detection": "1/3",
+      "memory_leak_detection": "3/3",
+      "crash_loop_detection": "1/3",
+      "false_positive_rate_pct": 94.55
+    },
+    "prometheus-server-configmap-reload": {
+      "total_samples": 55,
+      "anomalies_detected": 3,
+      "anomaly_rate_pct": 5.45,
+      "cpu_spike_detection": "1/3",
+      "memory_leak_detection": "3/3",
+      "crash_loop_detection": "3/3",
+      "false_positive_rate_pct": 94.55
+    },
+    "storage-provisioner": {
+      "total_samples": 55,
+      "anomalies_detected": 3,
+      "anomaly_rate_pct": 5.45,
+      "cpu_spike_detection": "1/3",
+      "memory_leak_detection": "1/3",
+      "crash_loop_detection": "3/3",
+      "false_positive_rate_pct": 94.55
+    },
+    "web-service": {
+      "total_samples": 55,
+      "anomalies_detected": 3,
+      "anomaly_rate_pct": 5.45,
+      "cpu_spike_detection": "1/3",
+      "memory_leak_detection": "1/3",
+      "crash_loop_detection": "1/3",
+      "false_positive_rate_pct": 94.55
+    }
+  },
+  "week7_lstm_accuracy": {
+    "api-service": {
+      "mae": 0.026192,
+      "rmse": 0.035141,
+      "test_samples": 9
+    },
+    "cadvisor": {
+      "mae": 115.856108,
+      "rmse": 151.562917,
+      "test_samples": 9
+    },
+    "cadvisor-csknm": {
+      "mae": 4e-06,
+      "rmse": 4e-06,
+      "test_samples": 9
+    },
+    "coredns": {
+      "mae": 7.295804,
+      "rmse": 9.779622,
+      "test_samples": 9
+    },
+    "etcd": {
+      "mae": 97.442491,
+      "rmse": 127.945188,
+      "test_samples": 9
+    },
+    "grafana": {
+      "mae": 22.53101,
+      "rmse": 29.585857,
+      "test_samples": 9
+    },
+    "kube-apiserver": {
+      "mae": 171.719519,
+      "rmse": 223.212424,
+      "test_samples": 9
+    },
+    "kube-controller-manager": {
+      "mae": 73.143768,
+      "rmse": 96.288622,
+      "test_samples": 9
+    },
+    "kube-proxy": {
+      "mae": 1.934973,
+      "rmse": 2.528665,
+      "test_samples": 9
+    },
+    "kube-scheduler": {
+      "mae": 26.94562,
+      "rmse": 34.890341,
+      "test_samples": 9
+    },
+    "kube-state-metrics": {
+      "mae": 4.002977,
+      "rmse": 5.284595,
+      "test_samples": 9
+    },
+    "node-exporter": {
+      "mae": 2.175104,
+      "rmse": 2.798909,
+      "test_samples": 9
+    },
+    "pipeline-worker": {
+      "mae": 0.087268,
+      "rmse": 0.11216,
+      "test_samples": 9
+    },
+    "prometheus-server": {
+      "mae": 44.614076,
+      "rmse": 57.372036,
+      "test_samples": 9
+    },
+    "prometheus-server-configmap-reload": {
+      "mae": 0.717688,
+      "rmse": 0.935941,
+      "test_samples": 9
+    },
+    "storage-provisioner": {
+      "mae": 7.730954,
+      "rmse": 10.080298,
+      "test_samples": 9
+    },
+    "web-service": {
+      "mae": 0.182216,
+      "rmse": 0.238923,
+      "test_samples": 9
+    }
+  }
+}

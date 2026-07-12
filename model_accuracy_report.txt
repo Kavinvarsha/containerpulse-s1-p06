@@ -1,0 +1,229 @@
+CONTAINERPULSE MODEL ACCURACY REPORT
+============================================================
+
+WEEK 6 — Isolation Forest Results
+----------------------------------------
+
+Container: api-service
+  total_samples: 55
+  anomalies_detected: 3
+  anomaly_rate_pct: 5.45
+  cpu_spike_detection: 1/3
+  memory_leak_detection: 1/3
+  crash_loop_detection: 3/3
+  false_positive_rate_pct: 94.55
+
+Container: cadvisor
+  total_samples: 55
+  anomalies_detected: 3
+  anomaly_rate_pct: 5.45
+  cpu_spike_detection: 1/3
+  memory_leak_detection: 3/3
+  crash_loop_detection: 1/3
+  false_positive_rate_pct: 94.55
+
+Container: cadvisor-csknm
+  total_samples: 55
+  anomalies_detected: 3
+  anomaly_rate_pct: 5.45
+  cpu_spike_detection: 1/3
+  memory_leak_detection: 1/3
+  crash_loop_detection: 3/3
+  false_positive_rate_pct: 94.55
+
+Container: coredns
+  total_samples: 55
+  anomalies_detected: 3
+  anomaly_rate_pct: 5.45
+  cpu_spike_detection: 1/3
+  memory_leak_detection: 3/3
+  crash_loop_detection: 1/3
+  false_positive_rate_pct: 94.55
+
+Container: etcd
+  total_samples: 55
+  anomalies_detected: 3
+  anomaly_rate_pct: 5.45
+  cpu_spike_detection: 1/3
+  memory_leak_detection: 1/3
+  crash_loop_detection: 3/3
+  false_positive_rate_pct: 94.55
+
+Container: grafana
+  total_samples: 55
+  anomalies_detected: 3
+  anomaly_rate_pct: 5.45
+  cpu_spike_detection: 1/3
+  memory_leak_detection: 3/3
+  crash_loop_detection: 3/3
+  false_positive_rate_pct: 94.55
+
+Container: kube-apiserver
+  total_samples: 55
+  anomalies_detected: 3
+  anomaly_rate_pct: 5.45
+  cpu_spike_detection: 1/3
+  memory_leak_detection: 1/3
+  crash_loop_detection: 3/3
+  false_positive_rate_pct: 94.55
+
+Container: kube-controller-manager
+  total_samples: 55
+  anomalies_detected: 3
+  anomaly_rate_pct: 5.45
+  cpu_spike_detection: 1/3
+  memory_leak_detection: 1/3
+  crash_loop_detection: 3/3
+  false_positive_rate_pct: 94.55
+
+Container: kube-proxy
+  total_samples: 55
+  anomalies_detected: 3
+  anomaly_rate_pct: 5.45
+  cpu_spike_detection: 1/3
+  memory_leak_detection: 3/3
+  crash_loop_detection: 3/3
+  false_positive_rate_pct: 94.55
+
+Container: kube-scheduler
+  total_samples: 55
+  anomalies_detected: 3
+  anomaly_rate_pct: 5.45
+  cpu_spike_detection: 1/3
+  memory_leak_detection: 3/3
+  crash_loop_detection: 3/3
+  false_positive_rate_pct: 94.55
+
+Container: kube-state-metrics
+  total_samples: 55
+  anomalies_detected: 3
+  anomaly_rate_pct: 5.45
+  cpu_spike_detection: 1/3
+  memory_leak_detection: 3/3
+  crash_loop_detection: 1/3
+  false_positive_rate_pct: 94.55
+
+Container: node-exporter
+  total_samples: 55
+  anomalies_detected: 3
+  anomaly_rate_pct: 5.45
+  cpu_spike_detection: 1/3
+  memory_leak_detection: 3/3
+  crash_loop_detection: 3/3
+  false_positive_rate_pct: 94.55
+
+Container: pipeline-worker
+  total_samples: 55
+  anomalies_detected: 3
+  anomaly_rate_pct: 5.45
+  cpu_spike_detection: 3/3
+  memory_leak_detection: 1/3
+  crash_loop_detection: 3/3
+  false_positive_rate_pct: 94.55
+
+Container: prometheus-server
+  total_samples: 55
+  anomalies_detected: 3
+  anomaly_rate_pct: 5.45
+  cpu_spike_detection: 1/3
+  memory_leak_detection: 3/3
+  crash_loop_detection: 1/3
+  false_positive_rate_pct: 94.55
+
+Container: prometheus-server-configmap-reload
+  total_samples: 55
+  anomalies_detected: 3
+  anomaly_rate_pct: 5.45
+  cpu_spike_detection: 1/3
+  memory_leak_detection: 3/3
+  crash_loop_detection: 3/3
+  false_positive_rate_pct: 94.55
+
+Container: storage-provisioner
+  total_samples: 55
+  anomalies_detected: 3
+  anomaly_rate_pct: 5.45
+  cpu_spike_detection: 1/3
+  memory_leak_detection: 1/3
+  crash_loop_detection: 3/3
+  false_positive_rate_pct: 94.55
+
+Container: web-service
+  total_samples: 55
+  anomalies_detected: 3
+  anomaly_rate_pct: 5.45
+  cpu_spike_detection: 1/3
+  memory_leak_detection: 1/3
+  crash_loop_detection: 1/3
+  false_positive_rate_pct: 94.55
+
+WEEK 7 — LSTM Accuracy
+----------------------------------------
+
+Container: api-service
+  MAE:  0.026192
+  RMSE: 0.035141
+
+Container: cadvisor
+  MAE:  115.856108
+  RMSE: 151.562917
+
+Container: cadvisor-csknm
+  MAE:  4e-06
+  RMSE: 4e-06
+
+Container: coredns
+  MAE:  7.295804
+  RMSE: 9.779622
+
+Container: etcd
+  MAE:  97.442491
+  RMSE: 127.945188
+
+Container: grafana
+  MAE:  22.53101
+  RMSE: 29.585857
+
+Container: kube-apiserver
+  MAE:  171.719519
+  RMSE: 223.212424
+
+Container: kube-controller-manager
+  MAE:  73.143768
+  RMSE: 96.288622
+
+Container: kube-proxy
+  MAE:  1.934973
+  RMSE: 2.528665
+
+Container: kube-scheduler
+  MAE:  26.94562
+  RMSE: 34.890341
+
+Container: kube-state-metrics
+  MAE:  4.002977
+  RMSE: 5.284595
+
+Container: node-exporter
+  MAE:  2.175104
+  RMSE: 2.798909
+
+Container: pipeline-worker
+  MAE:  0.087268
+  RMSE: 0.11216
+
+Container: prometheus-server
+  MAE:  44.614076
+  RMSE: 57.372036
+
+Container: prometheus-server-configmap-reload
+  MAE:  0.717688
+  RMSE: 0.935941
+
+Container: storage-provisioner
+  MAE:  7.730954
+  RMSE: 10.080298
+
+Container: web-service
+  MAE:  0.182216
+  RMSE: 0.238923
