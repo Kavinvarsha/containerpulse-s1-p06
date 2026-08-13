@@ -23,7 +23,7 @@ print("-" * 40)
 
 isolation_results = {}
 
-for container, group in df.groupby("container"):
+for container, group in df.groupby("pod"):
     if len(group) < 10:
         continue
 
@@ -81,7 +81,7 @@ print("-" * 40)
 lstm_results = {}
 SEQUENCE_LENGTH = 10
 
-for container, group in df.groupby("container"):
+for container, group in df.groupby("pod"):
     if "cpu" not in group.columns or len(group) < SEQUENCE_LENGTH + 5:
         continue
 

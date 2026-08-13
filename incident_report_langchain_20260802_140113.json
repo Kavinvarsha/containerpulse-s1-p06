@@ -1,0 +1,15 @@
+{
+  "container": "api-service",
+  "failure_type": "CPU spike",
+  "signals": [
+    "CPU 95 percent",
+    "restarts 12",
+    "memory 85 percent"
+  ],
+  "impact": "API degraded",
+  "remediation": [
+    "Scale pods",
+    "Add limits",
+    "Check loops"
+  ]
+}

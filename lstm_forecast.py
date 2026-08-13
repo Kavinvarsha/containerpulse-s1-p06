@@ -15,7 +15,7 @@ FORECAST_STEPS = 6    # predict next 6 readings (= ~3 minutes at 30s intervals)
 
 forecast_results = {}
 
-for container_name, group in df.groupby("container"):
+for container_name, group in df.groupby("pod"):
     group = group.sort_values("timestamp").reset_index(drop=True)
 
     if "cpu" not in group.columns or len(group) < SEQUENCE_LENGTH + 5:

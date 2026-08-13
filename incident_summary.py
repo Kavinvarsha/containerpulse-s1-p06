@@ -21,7 +21,7 @@ def load_reports():
 def analyze_with_groq(anomaly_data):
     summary_text = ""
     for c in anomaly_data["results"]:
-        summary_text += f"Container: {c['container']}, Anomalies: {c['anomaly_count']}/{c['total_records']} ({c['anomaly_percentage']}%)\n"
+        summary_text += f"Container: {c['pod']}, Anomalies: {c['anomaly_count']}/{c['total_records']} ({c['anomaly_percentage']}%)\n"
 
     prompt = f"""
 You are a Kubernetes container health expert. Analyze this anomaly detection report:

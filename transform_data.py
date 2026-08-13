@@ -4,14 +4,14 @@
 
 # # Pivot: one row per (timestamp, container), one column per metric
 # pivoted = df.pivot_table(
-#     index=["timestamp", "container"],
+#     index=["timestamp", "pod"],
 #     columns="metric",
 #     values="value",
 #     aggfunc="mean"
 # ).reset_index()
 
 # # Sort chronologically
-# pivoted = pivoted.sort_values(["container", "timestamp"])
+# pivoted = pivoted.sort_values(["pod", "timestamp"])
 
 # print("✅ Pivoted shape:", pivoted.shape)
 # print("\nColumns:", list(pivoted.columns))
@@ -27,20 +27,21 @@ import pandas as pd
 df = pd.read_csv("metrics_raw.csv", parse_dates=["timestamp"])
 
 # Keep only real containers (not unknown)
-df = df[df["container"] != "unknown"]
-df = df[df["container"] != "POD"]
+df = df[df["pod"] != "unknown"]
+df = df[df["pod"].str.contains("api-service|pipeline-worker|web-service", na=False)]
+df = df[df["pod"] != "POD"]
 
-print(f"Unique containers found: {df['container'].unique()}")
+print(f"Unique containers found: {df['pod'].unique()}")
 
 # Pivot to wide format: one row per (timestamp, container)
 pivoted = df.pivot_table(
-    index=["timestamp", "container", "pod", "namespace"],
+    index=["timestamp", "pod", "namespace"],
     columns="metric",
     values="value",
     aggfunc="mean"
 ).reset_index()
 
-pivoted = pivoted.sort_values(["container", "timestamp"])
+pivoted = pivoted.sort_values(["pod", "timestamp"])
 
 # Fill missing values with forward fill then 0
 pivoted = pivoted.ffill().fillna(0)

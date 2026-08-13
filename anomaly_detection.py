@@ -13,13 +13,13 @@ FEATURE_COLS = [col for col in ["cpu", "memory", "memory_cache", "network_rx", "
                 if col in df.columns]
 
 print(f"Using features: {FEATURE_COLS}")
-print(f"Total containers: {df['container'].nunique()}")
-print(f"Containers: {df['container'].unique()}\n")
+print(f"Total containers: {df['pod'].nunique()}")
+print(f"Containers: {df['pod'].unique()}\n")
 
 results = []
 
 # Train one Isolation Forest per container
-for container_name, group in df.groupby("container"):
+for container_name, group in df.groupby("pod"):
     group = group.sort_values("timestamp").reset_index(drop=True)
 
     if len(group) < 10:
@@ -54,9 +54,9 @@ for container_name, group in df.groupby("container"):
     print(f"  ✅ {container_name}: {anomaly_count}/{total} anomalies detected ({anomaly_count/total*100:.1f}%)")
 
     # Save anomaly details
-    anomalies = group[group["is_anomaly"]][["timestamp", "container", "pod"] + FEATURE_COLS + ["anomaly_score"]]
+    anomalies = group[group["is_anomaly"]][["timestamp", "pod", "pod"] + FEATURE_COLS + ["anomaly_score"]]
     results.append({
-        "container": container_name,
+        "pod": container_name,
         "total_records": total,
         "anomaly_count": int(anomaly_count),
         "anomaly_percentage": round(anomaly_count/total*100, 2),

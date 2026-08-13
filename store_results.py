@@ -53,7 +53,7 @@ for c in anomaly["results"]:
         VALUES (?, ?, ?, ?, ?)
     """, (
         anomaly["generated_at"],
-        c["container"],
+        c["pod"],
         c["total_records"],
         c["anomaly_count"],
         c["anomaly_percentage"]
