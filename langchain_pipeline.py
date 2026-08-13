@@ -37,7 +37,7 @@ except Exception as e:
 
 print(chr(10) + "Stage 2: Gemini generating report...")
 try:
-    gemini = ChatGoogleGenerativeAI(google_api_key=GEMINI_API_KEY, model="gemini-1.5-flash")
+    gemini = ChatGoogleGenerativeAI(google_api_key=GEMINI_API_KEY, model="gemini-2.5-flash")
     prompt = "Based on: " + classification + ". Return ONLY valid JSON with keys: container, failure_type, signals, impact, remediation. No markdown."
     report = gemini.invoke([HumanMessage(content=prompt)]).content.strip()
     lines = report.splitlines()

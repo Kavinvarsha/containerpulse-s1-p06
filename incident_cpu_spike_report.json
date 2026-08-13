@@ -1,0 +1,58 @@
+[
+  {
+    "container": "api-service (id 1)",
+    "failure_type": "CPU Spike",
+    "signals": "High CPU usage (82%)",
+    "impact": "Degraded service performance, increased latency, potential unresponsiveness",
+    "remediation": "Optimize application code, increase CPU resource limits, scale out instances, investigate underlying workload or misconfigurations"
+  },
+  {
+    "container": "api-service (id 18)",
+    "failure_type": "CPU Spike",
+    "signals": "High CPU usage (82%)",
+    "impact": "Degraded service performance, increased latency, potential unresponsiveness",
+    "remediation": "Optimize application code, increase CPU resource limits, scale out instances, investigate underlying workload or misconfigurations"
+  },
+  {
+    "container": "grafana (id 6)",
+    "failure_type": "CPU Spike",
+    "signals": "High CPU usage (82%)",
+    "impact": "Degraded service performance, increased latency, potential unresponsiveness",
+    "remediation": "Optimize application code, increase CPU resource limits, scale out instances, investigate underlying workload or misconfigurations"
+  },
+  {
+    "container": "kube-state-metrics (id 11)",
+    "failure_type": "CPU Spike",
+    "signals": "High CPU usage (82%)",
+    "impact": "Degraded service performance, increased latency, potential unresponsiveness",
+    "remediation": "Optimize application code, increase CPU resource limits, scale out instances, investigate underlying workload or misconfigurations"
+  },
+  {
+    "container": "node-exporter (id 12)",
+    "failure_type": "CPU Spike",
+    "signals": "High CPU usage (82%)",
+    "impact": "Degraded service performance, increased latency, potential unresponsiveness",
+    "remediation": "Optimize application code, increase CPU resource limits, scale out instances, investigate underlying workload or misconfigurations"
+  },
+  {
+    "container": "pipeline-worker (id 13)",
+    "failure_type": "CPU Spike",
+    "signals": "High CPU usage (82%)",
+    "impact": "Degraded service performance, increased latency, potential unresponsiveness",
+    "remediation": "Optimize application code, increase CPU resource limits, scale out instances, investigate underlying workload or misconfigurations"
+  },
+  {
+    "container": "prometheus-server (id 14)",
+    "failure_type": "CPU Spike",
+    "signals": "High CPU usage (82%)",
+    "impact": "Degraded service performance, increased latency, potential unresponsiveness",
+    "remediation": "Optimize application code, increase CPU resource limits, scale out instances, investigate underlying workload or misconfigurations"
+  },
+  {
+    "container": "web-service (id 17)",
+    "failure_type": "CPU Spike",
+    "signals": "High CPU usage (82%)",
+    "impact": "Degraded service performance, increased latency, potential unresponsiveness",
+    "remediation": "Optimize application code, increase CPU resource limits, scale out instances, investigate underlying workload or misconfigurations"
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "analysis": "False Positive Analysis on Clean Baseline Data",
+  "total_samples": 225,
+  "false_positives": 12,
+  "false_positive_rate_pct": 5.33,
+  "threshold_pct": 10,
+  "result": "PASS",
+  "model": "IsolationForest",
+  "contamination": 0.05
+}

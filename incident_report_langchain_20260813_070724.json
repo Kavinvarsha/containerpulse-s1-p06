@@ -1,0 +1,37 @@
+[
+  {
+    "container": "N/A",
+    "failure_type": "OOM (Out of Memory)",
+    "signals": "Memory usage > 90%",
+    "impact": "Container termination/restart, service unavailability, performance degradation.",
+    "remediation": "Increase container memory limits, optimize application memory usage, identify memory leaks."
+  },
+  {
+    "container": "N/A",
+    "failure_type": "CPU spike",
+    "signals": "CPU usage > 90%",
+    "impact": "Service slowdown, unresponsiveness, potential service unavailability.",
+    "remediation": "Optimize application code, scale resources, identify root cause of high CPU usage, review resource limits."
+  },
+  {
+    "container": "api-service",
+    "failure_type": "Crash loop",
+    "signals": "Potential crash loop: Repeated failures of the same container (IDs 1 and 18)",
+    "impact": "Service unavailability, resource consumption due to repeated restarts.",
+    "remediation": "Check container logs for error messages, review recent code changes, review container resource limits, inspect application dependencies."
+  },
+  {
+    "container": "cadvisor",
+    "failure_type": "Crash loop",
+    "signals": "Potential crash loop: Repeated failures of the same container (IDs 2 and 19)",
+    "impact": "Service unavailability, resource consumption due to repeated restarts.",
+    "remediation": "Check container logs for error messages, review recent code changes, review container resource limits, inspect application dependencies."
+  },
+  {
+    "container": "cadvisor-csknm",
+    "failure_type": "Crash loop",
+    "signals": "Potential crash loop: Repeated failures of the same container (IDs 3 and 20)",
+    "impact": "Service unavailability, resource consumption due to repeated restarts.",
+    "remediation": "Check container logs for error messages, review recent code changes, review container resource limits, inspect application dependencies."
+  }
+]

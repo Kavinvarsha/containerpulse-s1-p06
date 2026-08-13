@@ -67,8 +67,8 @@ Be concise and professional.
     # Try models in order until one works
     models_to_try = [
         "gemini-2.5-flash",
-        "gemini-2.5-flash-8b",
-        "gemini-2.0-flash-lite",
+        "gemini-2.5-flash",
+        "gemini-2.5-flash",
     ]
 
     for model_name in models_to_try:

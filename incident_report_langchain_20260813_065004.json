@@ -1,0 +1,51 @@
+[
+  {
+    "container": "api-service",
+    "failure_type": "OOM",
+    "signals": "Memory usage exceeded 80% threshold.",
+    "impact": "Service instability, potential unavailability, performance degradation due to resource exhaustion.",
+    "remediation": "Increase memory allocation, optimize application memory usage, identify and fix memory leaks, scale horizontally, adjust resource limits."
+  },
+  {
+    "container": "grafana",
+    "failure_type": "OOM",
+    "signals": "Memory usage exceeded 80% threshold.",
+    "impact": "Service instability, potential unavailability, performance degradation due to resource exhaustion.",
+    "remediation": "Increase memory allocation, optimize application memory usage, identify and fix memory leaks, scale horizontally, adjust resource limits."
+  },
+  {
+    "container": "kube-state-metrics",
+    "failure_type": "OOM",
+    "signals": "Memory usage exceeded 80% threshold.",
+    "impact": "Service instability, potential unavailability, performance degradation due to resource exhaustion.",
+    "remediation": "Increase memory allocation, optimize application memory usage, identify and fix memory leaks, scale horizontally, adjust resource limits."
+  },
+  {
+    "container": "node-exporter",
+    "failure_type": "OOM",
+    "signals": "Memory usage exceeded 80% threshold.",
+    "impact": "Service instability, potential unavailability, performance degradation due to resource exhaustion.",
+    "remediation": "Increase memory allocation, optimize application memory usage, identify and fix memory leaks, scale horizontally, adjust resource limits."
+  },
+  {
+    "container": "pipeline-worker",
+    "failure_type": "OOM",
+    "signals": "Memory usage exceeded 80% threshold.",
+    "impact": "Service instability, potential unavailability, performance degradation due to resource exhaustion.",
+    "remediation": "Increase memory allocation, optimize application memory usage, identify and fix memory leaks, scale horizontally, adjust resource limits."
+  },
+  {
+    "container": "prometheus-server",
+    "failure_type": "OOM",
+    "signals": "Memory usage exceeded 80% threshold.",
+    "impact": "Service instability, potential unavailability, performance degradation due to resource exhaustion.",
+    "remediation": "Increase memory allocation, optimize application memory usage, identify and fix memory leaks, scale horizontally, adjust resource limits."
+  },
+  {
+    "container": "web-service",
+    "failure_type": "OOM",
+    "signals": "Memory usage exceeded 80% threshold.",
+    "impact": "Service instability, potential unavailability, performance degradation due to resource exhaustion.",
+    "remediation": "Increase memory allocation, optimize application memory usage, identify and fix memory leaks, scale horizontally, adjust resource limits."
+  }
+]

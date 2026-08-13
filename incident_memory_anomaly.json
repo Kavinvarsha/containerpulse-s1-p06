@@ -1,0 +1,93 @@
+{
+  "generated_at": "2026-08-13T07:07:10.077853",
+  "total_containers_analyzed": 3,
+  "results": [
+    {
+      "pod": "api-service-5c4bc6f959-bv2xf",
+      "total_records": 75,
+      "anomaly_count": 0,
+      "anomaly_percentage": 0.0,
+      "anomalies": []
+    },
+    {
+      "pod": "pipeline-worker-86d677d797-qvxs9",
+      "total_records": 75,
+      "anomaly_count": 4,
+      "anomaly_percentage": 5.33,
+      "anomalies": [
+        {
+          "timestamp": "2026-08-13 06:30:06",
+          "pod": "pipeline-worker-86d677d797-qvxs9",
+          "cpu": 0.062151,
+          "memory": 4374528.0,
+          "memory_cache": 69632.0,
+          "anomaly_score": -0.07300024141124883
+        },
+        {
+          "timestamp": "2026-08-13 06:30:36",
+          "pod": "pipeline-worker-86d677d797-qvxs9",
+          "cpu": 0.063933,
+          "memory": 4374528.0,
+          "memory_cache": 69632.0,
+          "anomaly_score": -0.008223661180484676
+        },
+        {
+          "timestamp": "2026-08-13 07:06:36",
+          "pod": "pipeline-worker-86d677d797-qvxs9",
+          "cpu": 0.205144,
+          "memory": 4374528.0,
+          "memory_cache": 69632.0,
+          "anomaly_score": -0.011229468256436337
+        },
+        {
+          "timestamp": "2026-08-13 07:07:06",
+          "pod": "pipeline-worker-86d677d797-qvxs9",
+          "cpu": 0.207765,
+          "memory": 4374528.0,
+          "memory_cache": 69632.0,
+          "anomaly_score": -0.08371885949415836
+        }
+      ]
+    },
+    {
+      "pod": "web-service-75c456564c-vwmf8",
+      "total_records": 66,
+      "anomaly_count": 4,
+      "anomaly_percentage": 6.06,
+      "anomalies": [
+        {
+          "timestamp": "2026-08-13 06:30:06",
+          "pod": "web-service-75c456564c-vwmf8",
+          "cpu": 0.084665,
+          "memory": 7282688.0,
+          "memory_cache": 380928.0,
+          "anomaly_score": -0.0670155840599369
+        },
+        {
+          "timestamp": "2026-08-13 06:30:36",
+          "pod": "web-service-75c456564c-vwmf8",
+          "cpu": 0.08657,
+          "memory": 7282688.0,
+          "memory_cache": 380928.0,
+          "anomaly_score": -0.0028913737429477893
+        },
+        {
+          "timestamp": "2026-08-13 07:02:06",
+          "pod": "web-service-75c456564c-vwmf8",
+          "cpu": 0.198694,
+          "memory": 7282688.0,
+          "memory_cache": 380928.0,
+          "anomaly_score": -0.011174415013432415
+        },
+        {
+          "timestamp": "2026-08-13 07:02:36",
+          "pod": "web-service-75c456564c-vwmf8",
+          "cpu": 0.200401,
+          "memory": 7282688.0,
+          "memory_cache": 380928.0,
+          "anomaly_score": -0.05446051523537909
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+[
+  {
+    "container": "api-service",
+    "failure_type": "CPU spike",
+    "signals": [82, 5, 6.1],
+    "impact": "Reduced performance, increased latency, and potential unresponsiveness of the service.",
+    "remediation": "Optimize application code, increase resource allocation, or scale horizontally to handle the load."
+  },
+  {
+    "container": "grafana",
+    "failure_type": "CPU spike",
+    "signals": [82, 5, 6.1],
+    "impact": "Reduced performance, increased latency, and potential unresponsiveness of the service.",
+    "remediation": "Optimize application code, increase resource allocation, or scale horizontally to handle the load."
+  },
+  {
+    "container": "kube-state-metrics",
+    "failure_type": "CPU spike",
+    "signals": [82, 5, 6.1],
+    "impact": "Reduced performance, increased latency, and potential unresponsiveness of the service.",
+    "remediation": "Optimize application code, increase resource allocation, or scale horizontally to handle the load."
+  },
+  {
+    "container": "node-exporter",
+    "failure_type": "CPU spike",
+    "signals": [82, 5, 6.1],
+    "impact": "Reduced performance, increased latency, and potential unresponsiveness of the service.",
+    "remediation": "Optimize application code, increase resource allocation, or scale horizontally to handle the load."
+  },
+  {
+    "container": "pipeline-worker",
+    "failure_type": "CPU spike",
+    "signals": [82, 5, 6.1],
+    "impact": "Reduced performance, increased latency, and potential unresponsiveness of the service.",
+    "remediation": "Optimize application code, increase resource allocation, or scale horizontally to handle the load."
+  },
+  {
+    "container": "prometheus-server",
+    "failure_type": "CPU spike",
+    "signals": [82, 5, 6.1],
+    "impact": "Reduced performance, increased latency, and potential unresponsiveness of the service.",
+    "remediation": "Optimize application code, increase resource allocation, or scale horizontally to handle the load."
+  },
+  {
+    "container": "web-service",
+    "failure_type": "CPU spike",
+    "signals": [82, 5, 6.1],
+    "impact": "Reduced performance, increased latency, and potential unresponsiveness of the service.",
+    "remediation": "Optimize application code, increase resource allocation, or scale horizontally to handle the load."
+  }
+]

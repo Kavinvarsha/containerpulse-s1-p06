@@ -1,0 +1,102 @@
+{
+  "generated_at": "2026-08-13T06:55:16.494681",
+  "total_containers_analyzed": 3,
+  "results": [
+    {
+      "pod": "api-service-5c4bc6f959-bv2xf",
+      "total_records": 51,
+      "anomaly_count": 3,
+      "anomaly_percentage": 5.88,
+      "anomalies": [
+        {
+          "timestamp": "2026-08-13 06:54:15",
+          "pod": "api-service-5c4bc6f959-bv2xf",
+          "cpu": 0.09848,
+          "memory": 12984320.0,
+          "memory_cache": 225280.0,
+          "anomaly_score": -0.11782049297590036
+        },
+        {
+          "timestamp": "2026-08-13 06:54:45",
+          "pod": "api-service-5c4bc6f959-bv2xf",
+          "cpu": 0.09848,
+          "memory": 12984320.0,
+          "memory_cache": 225280.0,
+          "anomaly_score": -0.11782049297590036
+        },
+        {
+          "timestamp": "2026-08-13 06:55:15",
+          "pod": "api-service-5c4bc6f959-bv2xf",
+          "cpu": 0.09848,
+          "memory": 12984320.0,
+          "memory_cache": 225280.0,
+          "anomaly_score": -0.11782049297590036
+        }
+      ]
+    },
+    {
+      "pod": "pipeline-worker-86d677d797-qvxs9",
+      "total_records": 51,
+      "anomaly_count": 3,
+      "anomaly_percentage": 5.88,
+      "anomalies": [
+        {
+          "timestamp": "2026-08-13 06:30:15",
+          "pod": "pipeline-worker-86d677d797-qvxs9",
+          "cpu": 0.062151,
+          "memory": 4374528.0,
+          "memory_cache": 69632.0,
+          "anomaly_score": -0.0696500055459921
+        },
+        {
+          "timestamp": "2026-08-13 06:30:45",
+          "pod": "pipeline-worker-86d677d797-qvxs9",
+          "cpu": 0.063933,
+          "memory": 4374528.0,
+          "memory_cache": 69632.0,
+          "anomaly_score": -0.0020716278619633544
+        },
+        {
+          "timestamp": "2026-08-13 06:55:15",
+          "pod": "pipeline-worker-86d677d797-qvxs9",
+          "cpu": 0.150816,
+          "memory": 4374528.0,
+          "memory_cache": 69632.0,
+          "anomaly_score": -0.04939747918127657
+        }
+      ]
+    },
+    {
+      "pod": "web-service-75c456564c-vwmf8",
+      "total_records": 51,
+      "anomaly_count": 3,
+      "anomaly_percentage": 5.88,
+      "anomalies": [
+        {
+          "timestamp": "2026-08-13 06:30:15",
+          "pod": "web-service-75c456564c-vwmf8",
+          "cpu": 0.084665,
+          "memory": 7282688.0,
+          "memory_cache": 380928.0,
+          "anomaly_score": -0.07731556778366588
+        },
+        {
+          "timestamp": "2026-08-13 06:54:45",
+          "pod": "web-service-75c456564c-vwmf8",
+          "cpu": 0.169257,
+          "memory": 7282688.0,
+          "memory_cache": 380928.0,
+          "anomaly_score": -0.005625042838089178
+        },
+        {
+          "timestamp": "2026-08-13 06:55:15",
+          "pod": "web-service-75c456564c-vwmf8",
+          "cpu": 0.169979,
+          "memory": 7282688.0,
+          "memory_cache": 380928.0,
+          "anomaly_score": -0.023382853963264227
+        }
+      ]
+    }
+  ]
+}
