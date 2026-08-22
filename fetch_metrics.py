@@ -3,7 +3,7 @@ from prometheus_api_client import PrometheusConnect
 import pandas as pd
 from datetime import datetime, timedelta
 
-PROMETHEUS_URL = "http://127.0.0.1:34721"
+PROMETHEUS_URL = "http://127.0.0.1:43201"
 
 prom = PrometheusConnect(url=PROMETHEUS_URL, disable_ssl=True)
 

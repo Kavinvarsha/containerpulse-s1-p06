@@ -1,0 +1,136 @@
+{
+    "meta": {
+        "type": "db",
+        "canSave": true,
+        "canEdit": true,
+        "canAdmin": true,
+        "canStar": true,
+        "canDelete": true,
+        "slug": "containerpulse-health-monitor",
+        "url": "/d/akn99n/containerpulse-health-monitor",
+        "expires": "0001-01-01T00:00:00Z",
+        "created": "2026-08-22T13:28:41Z",
+        "updated": "2026-08-22T13:28:41Z",
+        "updatedBy": "Anonymous",
+        "createdBy": "Anonymous",
+        "version": 1,
+        "hasAcl": false,
+        "isFolder": false,
+        "apiVersion": "v0alpha1",
+        "folderId": 0,
+        "folderUid": "",
+        "folderTitle": "General",
+        "folderUrl": "",
+        "provisioned": false,
+        "provisionedExternalId": "",
+        "annotationsPermissions": {
+            "dashboard": {
+                "canAdd": true,
+                "canEdit": true,
+                "canDelete": true
+            }
+        }
+    },
+    "dashboard": {
+        "id": 1485373553905664,
+        "panels": [
+            {
+                "datasource": {
+                    "type": "prometheus",
+                    "uid": "prometheus"
+                },
+                "gridPos": {
+                    "h": 8,
+                    "w": 12,
+                    "x": 0,
+                    "y": 0
+                },
+                "id": 1,
+                "targets": [
+                    {
+                        "expr": "rate(container_cpu_usage_seconds_total{pod=~'api-service.*|pipeline-worker.*|web-service.*',cpu='total'}[5m])",
+                        "legendFormat": "{{pod}}",
+                        "refId": "A"
+                    }
+                ],
+                "title": "CPU Usage - Target Pods",
+                "type": "timeseries"
+            },
+            {
+                "datasource": {
+                    "type": "prometheus",
+                    "uid": "prometheus"
+                },
+                "gridPos": {
+                    "h": 8,
+                    "w": 12,
+                    "x": 12,
+                    "y": 0
+                },
+                "id": 2,
+                "targets": [
+                    {
+                        "expr": "container_memory_usage_bytes{pod=~'api-service.*|pipeline-worker.*|web-service.*'}",
+                        "legendFormat": "{{pod}}",
+                        "refId": "A"
+                    }
+                ],
+                "title": "Memory Usage - Target Pods",
+                "type": "timeseries"
+            },
+            {
+                "datasource": {
+                    "type": "prometheus",
+                    "uid": "prometheus"
+                },
+                "gridPos": {
+                    "h": 8,
+                    "w": 12,
+                    "x": 0,
+                    "y": 8
+                },
+                "id": 3,
+                "targets": [
+                    {
+                        "expr": "kube_pod_container_status_restarts_total{namespace='monitoring',pod=~'api-service.*|pipeline-worker.*|web-service.*'}",
+                        "legendFormat": "{{pod}}",
+                        "refId": "A"
+                    }
+                ],
+                "title": "Container Restart History",
+                "type": "timeseries"
+            },
+            {
+                "datasource": {
+                    "type": "prometheus",
+                    "uid": "prometheus"
+                },
+                "gridPos": {
+                    "h": 8,
+                    "w": 12,
+                    "x": 12,
+                    "y": 8
+                },
+                "id": 4,
+                "targets": [
+                    {
+                        "expr": "kube_pod_container_status_restarts_total{namespace='monitoring',pod=~'api-service.*|pipeline-worker.*|web-service.*'}",
+                        "legendFormat": "{{pod}}",
+                        "refId": "A"
+                    }
+                ],
+                "title": "Prediction Alerts - Anomaly Score",
+                "type": "timeseries"
+            }
+        ],
+        "refresh": "30s",
+        "schemaVersion": 38,
+        "tags": [
+            "containerpulse"
+        ],
+        "timezone": "browser",
+        "title": "ContainerPulse Health Monitor",
+        "uid": "akn99n",
+        "version": 1
+    }
+}

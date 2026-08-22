@@ -1,0 +1,23 @@
+[
+  {
+    "container": "api-service",
+    "failure_type": "Resource Exhaustion",
+    "signals": "CPU spike",
+    "impact": "API performance degradation, increased latency, potential service unavailability or timeouts for users.",
+    "remediation": "Investigate application code for inefficiencies, check for runaway processes, analyze traffic patterns, scale CPU resources, optimize database queries, review recent deployments."
+  },
+  {
+    "container": "web-service",
+    "failure_type": "Application Instability",
+    "signals": "crash loop",
+    "impact": "Web service completely unavailable, users unable to access the application.",
+    "remediation": "Review application logs for crash details (exceptions, OOM errors), check recent code deployments or configuration changes, rollback if necessary, verify dependent services are healthy, ensure adequate memory/CPU."
+  },
+  {
+    "container": "pipeline-worker",
+    "failure_type": "Operational",
+    "signals": "normal",
+    "impact": "None, operating as expected.",
+    "remediation": "Continue monitoring."
+  }
+]
