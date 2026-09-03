@@ -35,7 +35,7 @@ Provide:
 Keep it concise and technical.
 """
     response = groq_client.chat.completions.create(
-        model="llama-3.3-70b-versatile",
+        model="openai/gpt-oss-120b",
         messages=[{"role": "user", "content": prompt}],
         max_tokens=500
     )
@@ -91,7 +91,7 @@ Be concise and professional.
     # If all Gemini models fail, use Groq for the full report too
     print("    ⚠️  All Gemini models quota exceeded — using Groq for full report")
     response = groq_client.chat.completions.create(
-        model="llama-3.3-70b-versatile",
+        model="openai/gpt-oss-120b",
         messages=[{"role": "user", "content": prompt}],
         max_tokens=800
     )

@@ -3,7 +3,7 @@ from prometheus_api_client import PrometheusConnect
 import pandas as pd
 from datetime import datetime, timedelta
 
-PROMETHEUS_URL = "http://127.0.0.1:43201"
+PROMETHEUS_URL = "😿  service monitoring/prometheus-kube-prometheus-prometheus has no node port"
 
 prom = PrometheusConnect(url=PROMETHEUS_URL, disable_ssl=True)
 

@@ -1,0 +1,23 @@
+[
+  {
+    "container": "api-service",
+    "failure_type": "CPU spike",
+    "signals": "Elevated CPU utilization metrics, potential increase in response times, possible latency issues, service degradation.",
+    "impact": "Degraded API performance, potential timeouts for clients, reduced service availability under load, poor user experience.",
+    "remediation": "Investigate root cause (e.g., inefficient code, sudden traffic surge, resource limits). Scale up/out instances. Optimize application code/queries. Implement rate limiting or load shedding."
+  },
+  {
+    "container": "web-service",
+    "failure_type": "crash loop",
+    "signals": "Repeated container restarts, unhealthy liveness/readiness probes, application logs indicating startup failures or unhandled exceptions.",
+    "impact": "Complete service unavailability for the web application, users unable to access the site, potential data loss if stateful.",
+    "remediation": "Review application logs for errors/exceptions during startup. Check configuration files and environment variables. Rollback recent deployments. Debug application code for fatal errors."
+  },
+  {
+    "container": "pipeline-worker",
+    "failure_type": "normal",
+    "signals": "Healthy status, expected resource usage, successful task processing, no error logs, consistent throughput.",
+    "impact": "None. Operating as expected.",
+    "remediation": "None."
+  }
+]

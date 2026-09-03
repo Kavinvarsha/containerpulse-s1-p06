@@ -24,7 +24,7 @@ except Exception as e:
 
 print(chr(10) + "Stage 1: Groq classifying...")
 try:
-    groq = ChatGroq(api_key=GROQ_API_KEY, model="llama-3.3-70b-versatile")
+    groq = ChatGroq(api_key=GROQ_API_KEY, model="llama3-70b-8192")
     msgs = [
         SystemMessage(content="You are a container reliability expert. Be concise."),
         HumanMessage(content="Classify failure types (OOM/CPU spike/crash loop) from: " + anomaly_text)
